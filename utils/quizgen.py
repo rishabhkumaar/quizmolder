@@ -2,7 +2,9 @@ import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 import random
 
-nltk.download('punkt', quiet=True)
+# Auto download required NLTK models
+nltk.download("punkt", quiet=True)
+nltk.download("punkt_tab", quiet=True)
 
 def generate_quiz(text, num_questions=5):
     sentences = sent_tokenize(text)
@@ -19,9 +21,9 @@ def generate_quiz(text, num_questions=5):
         answer = random.choice(content_words)
         question = sent.replace(answer, "_____")
 
-        # create fake options (random words from text)
+        # create fake options
         all_words = [w for w in word_tokenize(text) if w.isalpha()]
-        options = random.sample(all_words, 3)
+        options = random.sample(all_words, min(3, len(all_words)))
         options.append(answer)
         random.shuffle(options)
 

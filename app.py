@@ -1,7 +1,7 @@
 import streamlit as st
-from utils.quizgen.py import generate_quiz
+from utils.quizgen import generate_quiz
 
-st.title("QuizForge – Offline AI Quiz Generator")
+st.title("QuizMolder – Offline AI Quiz Generator")
 st.write("Paste your notes below and generate quizzes instantly (offline, free).")
 
 # Input text
