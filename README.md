@@ -29,7 +29,7 @@ It is completely free, offline-first, and open-source. No paid APIs, no constant
 
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/<your-username>/quizmolder.git
+git clone https://github.com/rishabhkumaar/quizmolder.git
 cd quizmolder
 pip install -r requirements.txt
 ````
