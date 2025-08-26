@@ -1,0 +1,8 @@
+quizforge/
+│── app.py              # Streamlit main app
+│── requirements.txt    # Dependencies
+│── utils/
+│    └── quizgen.py     # Quiz generation logic
+│── data/
+│    └── sample_notes.txt   # Example input
+│── README.md           # Project overview
