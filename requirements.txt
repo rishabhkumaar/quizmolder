@@ -1,3 +1,5 @@
-streamlit
-nltk
-spacy
+streamlit>=1.20
+nltk>=3.8
+fpdf>=1.7.2   # optional, for PDF export
+sentence-transformers>=2.2.2  # optional, for embedding-based distractors
+numpy>=1.24
